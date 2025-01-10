@@ -26,7 +26,15 @@ body {
   );
 }
 
-.title-flash {
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-flash,
+.bottom-text {
   background: #ece81a;
 }
 
