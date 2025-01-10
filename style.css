@@ -1,0 +1,70 @@
+:root {
+  --logo-width: 10rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --stripes-width: 3rem;
+  margin: 0;
+  font-family: "Comic Sans";
+  background: repeating-linear-gradient(
+    -45deg,
+    #d23f45aa,
+    #d23f45aa calc(1 * var(--stripes-width)),
+    #d9a638aa calc(1 * var(--stripes-width)),
+    #d9a638aa calc(2 * var(--stripes-width)),
+    #92a678aa calc(2 * var(--stripes-width)),
+    #92a678aa calc(3 * var(--stripes-width)),
+    #798889aa calc(3 * var(--stripes-width)),
+    #798889aa calc(4 * var(--stripes-width)),
+    #87485faa calc(4 * var(--stripes-width)),
+    #87485faa calc(5 * var(--stripes-width))
+  );
+}
+
+.title-flash {
+  background: #ece81a;
+}
+
+.logo {
+  width: var(--logo-width);
+  position: absolute;
+  animation:
+    moveX 7s linear 0s infinite alternate,
+    moveY 12s linear 0s infinite alternate,
+    rotate 5s linear 0s infinite;
+}
+
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: calc(100vw - var(--logo-width));
+  }
+}
+
+@keyframes moveY {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: calc(100vh - var(--logo-width));
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
