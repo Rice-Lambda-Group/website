@@ -10,7 +10,7 @@ body {
 body {
   --stripes-width: 3rem;
   margin: 0;
-  font-family: "Comic Sans";
+  font-family: "Comic Sans", "Impact", sans-serif;
   background: repeating-linear-gradient(
     -45deg,
     #d23f45aa,
