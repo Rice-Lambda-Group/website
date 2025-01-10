@@ -37,6 +37,7 @@ body {
     moveX 7s linear 0s infinite alternate,
     moveY 12s linear 0s infinite alternate,
     rotate 5s linear 0s infinite;
+  filter: drop-shadow(0 0 10px #696969);
 }
 
 @keyframes moveX {
